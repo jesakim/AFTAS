@@ -1,21 +1,21 @@
 package com.competition.aftas.service.impl;
-import com.competition.aftas.DTO.RankingDTO;
-import com.competition.aftas.domain.Competition;
-import com.competition.aftas.domain.Fish;
-import com.competition.aftas.domain.Hunting;
-import com.competition.aftas.domain.Level;
-import com.competition.aftas.domain.Member;
-import com.competition.aftas.repository.HuntingRepository;
-import com.competition.aftas.service.RankingService;
+
+import com.competition.aftas.domain.*;
+import com.competition.aftas.repository.*;
+import com.competition.aftas.service.*;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
-import org.mockito.*;
-import java.util.Arrays;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
-import static org.mockito.Mockito.*;
+import org.mockito.InjectMocks;
+import org.mockito.Mock;
+import org.mockito.MockitoAnnotations;
+import org.springframework.boot.test.context.SpringBootTest;
 
+import java.util.Arrays;
+import java.util.List;
+
+import static org.mockito.Mockito.when;
+
+@SpringBootTest
 class HuntingServiceImplTest {
 
     @Mock

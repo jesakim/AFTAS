@@ -1,7 +1,7 @@
 package com.competition.aftas.controller;
 
 import com.competition.aftas.service.CompetitionService;
-import com.competition.aftas.domain.Competition;
+import com.competition.aftas.domain.*;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.PageRequest;
@@ -10,7 +10,7 @@ import org.springframework.format.annotation.DateTimeFormat;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
-import com.competition.aftas.DTO.CompetitionDTO;
+import com.competition.aftas.DTO.*;
 
 
 import java.util.List;
@@ -18,6 +18,7 @@ import java.util.List;
 @RestController
 @RequestMapping("/competitions")
 public class CompetitionController {
+
 
     private final CompetitionService competitionService;
 
