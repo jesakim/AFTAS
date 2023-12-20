@@ -20,7 +20,7 @@ public class RankingController {
         RankingDTO createdRanking = rankingService.createRanking(rankingDTO);
         return new ResponseEntity<>(createdRanking, HttpStatus.CREATED);
     }
-    @GetMapping("/competition/{competitionI")
+    @GetMapping("/competition/{competitionId}")
     public ResponseEntity<List<RankingDTO>> getRankingsByCompetition(@PathVariable Long competitionId) {
         List<RankingDTO> rankings = rankingService.getRankingsByCompetition(competitionId);
         return ResponseEntity.ok(rankings);
