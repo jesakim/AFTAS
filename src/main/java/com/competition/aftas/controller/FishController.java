@@ -29,7 +29,7 @@ public class FishController {
     @GetMapping
     public ResponseEntity<List<FishDTO>> getAllFish() {
         List<FishDTO> fishList = fishService.getAllFish();
-        return ResponseEntity.ok(fishList);
+        return ResponseEntity.ok(fishLis);
     }
     @PutMapping("/{id}")
     public ResponseEntity<FishDTO> updateFish(@PathVariable Integer id, @RequestBody FishDTO updatedFishDTO) {
