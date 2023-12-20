@@ -29,7 +29,7 @@ public class MemberController {
     public MemberDTO updateMember(@PathVariable Integer num, @RequestBody MemberDTO updatedMemberDTO) {
         return memberService.updateMember(num, updatedMemberDTO);
     }
-    @DeleteMapping("/{nu")
+    @DeleteMapping("/{num}")
     public void deleteMember(@PathVariable Integer num) {
         memberService.deleteMember(num);
     }
